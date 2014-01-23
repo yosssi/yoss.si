@@ -17,4 +17,8 @@ block content
 		li
 			a[href="http://goes.jp"] Goes
 			| - Articles relating to Golang
-
+	h2 Blog
+	ul
+		li
+			a[href="http://yosssi.hatenablog.com/"] Yosssi's blog
+			| (Japanese)

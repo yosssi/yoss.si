@@ -8,6 +8,7 @@ block content
 		li Tokyo, Japan
 		li
 			a[href="https://github.com/yosssi"] GitHub
+			a[href="https://index.docker.io/u/yosssi/"] Docker Index
 			a[href="https://twitter.com/_yosssi"] Twitter
 			a[href="https://www.facebook.com/yosssi84"] Facebook
 		li

@@ -8,16 +8,18 @@ block content
 		li Tokyo, Japan
 		li
 			a[href="https://github.com/yosssi"] GitHub
+			span .
 			a[href="https://index.docker.io/u/yosssi/"] Docker Index
+			span .
 			a[href="https://twitter.com/_yosssi"] Twitter
+			span .
 			a[href="https://www.facebook.com/yosssi84"] Facebook
 		li
 			a[href="mailto:yoshida.keiji.84@gmail.com"] yoshida.keiji.84@gmail.com
 	h2 Works
 	ul
 		li
-			a[href="http://goes.jp"] Goes
-			| - Articles relating to Golang
+			a[href="https://github.com/yosssi/gonhk"] gonhk - NHK API Client in Go
 	h2 Blog
 	ul
 		li

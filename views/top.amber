@@ -4,7 +4,7 @@ block content
 	h2 About
 	ul
 		li Keiji Yoshida
-		li Gopher
+		li Golang, Docker, Drone
 		li Tokyo, Japan
 		li
 			a[href="https://github.com/yosssi"] GitHub

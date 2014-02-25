@@ -19,7 +19,7 @@ block content
 	h2 Works
 	ul
 		li
-			a[href="https://github.com/yosssi/gonhk"] gonhk - NHK API Client in Go
+			a[href="https://github.com/yosssi/gold"] Gold - Template engine for Golang
 	h2 Blog
 	ul
 		li

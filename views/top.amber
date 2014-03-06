@@ -22,6 +22,7 @@ block content
 	ul
 		li
 			a[href="https://github.com/yosssi/gold"] Gold - Template engine for Golang
+		li
 			a[href="https://github.com/yosssi/goat"] Goat - File watcher
 	h2 Blog
 	ul

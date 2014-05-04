@@ -4,7 +4,7 @@ block content
 	h2 About
 	ul
 		li Keiji Yoshida
-		li Golang, Docker, Drone
+		li Programmer
 		li Tokyo, Japan
 		li
 			a[href="https://github.com/yosssi"] GitHub
@@ -12,22 +12,17 @@ block content
 			a[href="https://twitter.com/_yosssi"] Twitter
 			span .
 			a[href="https://www.facebook.com/yosssi84"] Facebook
-			span .
-			a[href="http://osrc.dfm.io/yosssi"] OSRC
-			span .
-			a[href="https://index.docker.io/u/yosssi/"] Docker Index
-			span .
-			a[href="https://vagrantcloud.com/yosssi"] Vagrant Cloud
 		li
 			a[href="mailto:yoshida.keiji.84@gmail.com"] yoshida.keiji.84@gmail.com
 	h2 Works
 	ul
 		li
-			a[href="https://github.com/yosssi/gold"] Gold - Template engine for Golang
+			a[href="https://github.com/yosssi/gold"] Gold - Template engine for Go
+		li
+			a[href="https://github.com/yosssi/gohtml"] GoHTML - HTML formatter for Go
 		li
 			a[href="https://github.com/yosssi/goat"] Goat - File watcher
 	h2 Blog
 	ul
 		li
-			a[href="http://yosssi.hatenablog.com/"] Yosssi's blog
-			| (Japanese)
+			a[href="http://blog.yoss.si"] Yosssi's Blog

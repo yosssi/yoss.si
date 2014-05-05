@@ -2,16 +2,17 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/drone/routes"
-	"github.com/eknkc/amber"
-	"github.com/yosssi/gologger"
-	"github.com/yosssi/yosssi/consts"
 	"html/template"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"runtime"
 	"strings"
+
+	"github.com/drone/routes"
+	"github.com/yosssi/gold"
+	"github.com/yosssi/gologger"
+	"github.com/yosssi/yosssi/consts"
 )
 
 var (
@@ -20,11 +21,13 @@ var (
 	logger       gologger.Logger
 	version      = strings.TrimLeft(runtime.Version(), "go")
 	templates    = make(map[string]*template.Template)
+	g            *gold.Generator
 )
 
 func init() {
-	loadJson()
+	loadJSON()
 	setLogger()
+	g = gold.NewGenerator(isProduction())
 }
 
 func main() {
@@ -32,9 +35,9 @@ func main() {
 	serve()
 }
 
-func loadJson() {
-	setJson(consts.ServerJsonPath, &serverConfig)
-	setJson(consts.LoggerJsonPath, &loggerConfig)
+func loadJSON() {
+	setJSON(consts.ServerJsonPath, &serverConfig)
+	setJSON(consts.LoggerJsonPath, &loggerConfig)
 }
 
 func setLogger() {
@@ -67,7 +70,7 @@ func serve() {
 	}
 }
 
-func setJson(path string, config *map[string]string) {
+func setJSON(path string, config *map[string]string) {
 	bytes, err := ioutil.ReadFile(path)
 	if err != nil {
 		panic(err)
@@ -88,33 +91,20 @@ func isDebug() bool {
 }
 
 func top(w http.ResponseWriter, r *http.Request) {
-	render(w, "./views/top.amber", map[string]interface{}{
+	render(w, "./views/top.gold", map[string]interface{}{
 		"IsProduction": isProduction(),
 		"Version":      version,
 	})
 }
 
 func render(w http.ResponseWriter, file string, data interface{}) {
-	if isProduction() {
-		tpl, prs := templates[file]
-		if prs {
-			tpl.Execute(w, data)
-			return
-		}
-	}
-	compiler := amber.New()
-	err := compiler.ParseFile(file)
+	tpl, err := g.ParseFile(file)
 	if err != nil {
 		handleError(w, err)
 	}
-	tpl, err := compiler.Compile()
-	if err != nil {
+	if err := tpl.Execute(w, data); err != nil {
 		handleError(w, err)
 	}
-	if isProduction() {
-		templates[file] = tpl
-	}
-	tpl.Execute(w, data)
 }
 
 func handleError(w http.ResponseWriter, err error) {

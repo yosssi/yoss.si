@@ -4,7 +4,7 @@ block content
 	h2 About
 	ul
 		li Keiji Yoshida
-		li Programmer
+		li Programmer / Go / Elasticsearch / Machine Learning
 		li Tokyo, Japan
 		li
 			a[href="https://github.com/yosssi"] GitHub

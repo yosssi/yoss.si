@@ -4,7 +4,7 @@ block content
   h2 About
   ul
     li Keiji Yoshida
-    li Programmer / Go / Elasticsearch / Machine Learning
+    li Programmer / Author of <a href="http://gold.yoss.si/">Gold</a> (Template engine for Go) / Go / Elasticsearch / Machine Learning
     li Tokyo, Japan
     li
       a href="https://github.com/yosssi" GitHub
@@ -17,7 +17,7 @@ block content
   h2 Works
   ul
     li
-      a href="https://github.com/yosssi/gold"  Gold - Template engine for Go
+      a href="http://gold.yoss.si/"  Gold - Template engine for Go
     li
       a href="https://github.com/yosssi/gohtml" GoHTML - HTML formatter for Go
     li

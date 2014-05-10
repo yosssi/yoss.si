@@ -2,6 +2,8 @@
 
 [Yosssi](http://yoss.si/)
 
+## Installation
+
 ```sh
 $ go get github.com/yosssi/yoss.si
 ```

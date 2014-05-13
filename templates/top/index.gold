@@ -31,3 +31,7 @@ block content
       a href="https://github.com/yosssi/yoss.si" yoss.si - Website about Keiji Yoshida
     li
       a href="https://github.com/yosssi/gold.yoss.si" gold.yoss.si - Website about Gold
+  h2 Slides
+  ul
+    li
+      | <a href="http://slides.yoss.si/gocon/martini.html">Martini - Web framework for Go</a> / 31 May 2014 / Go Conference 2014 spring

@@ -31,7 +31,3 @@ block content
       a href="https://github.com/yosssi/yoss.si" yoss.si - Website about Keiji Yoshida (a.k.a. Yosssi)
     li
       a href="https://github.com/yosssi/gold.yoss.si" gold.yoss.si - Website about Gold
-  h2 Blog
-  ul
-    li
-      a href="http://blog.yoss.si" Yosssi's Blog

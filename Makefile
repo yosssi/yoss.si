@@ -1,6 +1,6 @@
 stylus:
 	stylus ./public/css/style.styl
-bindata:
+bin:
 	go-bindata -o ./assets.go templates/... public/...
 build:
 	go build ./...

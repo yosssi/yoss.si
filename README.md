@@ -1,11 +1,11 @@
-# Website about Keiji Yoshida (a.k.a. Yosssi)
+# Website about Keiji Yoshida
 
 [Yosssi](http://yoss.si/)
 
 ## Installation
 
 ```sh
-$ go get github.com/yosssi/yoss.si
+$ go get -u github.com/yosssi/yoss.si
 ```
 
 ## Execution

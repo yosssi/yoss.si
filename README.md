@@ -1,4 +1,4 @@
-# Website about Keiji Yoshida (a.k.a. Yosssi)
+# Website about Keiji Yoshida
 
 [Yosssi](http://yoss.si/)
 

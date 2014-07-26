@@ -17,7 +17,10 @@ var (
 func main() {
 	m := staticbin.Classic(Asset)
 	m.Get("/", func(w http.ResponseWriter) {
-		tpl, err := ace.ParseFiles("views/base", "views/top/index", &ace.Options{Asset: Asset})
+		tpl, err := ace.ParseFiles(
+			"views/base",
+			"views/top/index",
+			&ace.Options{Asset: Asset, Cache: martini.Env == martini.Prod})
 		if err != nil {
 			panic(err)
 		}

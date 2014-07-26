@@ -1,0 +1,24 @@
+= content main
+  h2 About
+  ul
+    li Keiji Yoshida
+    li Programmer / Go
+    li Tokyo, Japan
+    li
+      a href=https://github.com/yosssi GitHub
+      span &nbsp;/&nbsp;
+      a href=https://twitter.com/_yosssi Twitter
+      span &nbsp;/&nbsp;
+      a href=https://www.facebook.com/yosssi84 Facebook
+    li
+      a href=mailto:yoshida.keiji.84@gmail.com yoshida.keiji.84@gmail.com
+  h2 Works
+  ul
+    li
+      a href=https://github.com/yosssi/ace Ace - HTML Template engine for Go
+    li
+      a href=https://github.com/martini-contrib/staticbin StaticBin - Martini middleware/handler for serving static files from binary data
+  h2 Slides
+  ul
+    li
+      | <a href="http://slides.yoss.si/gocon/martini.html">Martini - Web framework for Go</a> / 31 May 2014 / Go Conference 2014 spring

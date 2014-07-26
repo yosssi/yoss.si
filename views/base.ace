@@ -1,31 +1,31 @@
-doctype html
+= doctype html
 
-html lang="en"
+html lang=en
   head
-    meta charset="utf-8"
-    meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1"
+    meta charset=utf-8
+    meta name=viewport content=width=device-width,user-scalable=no,maximum-scale=1
     title Yosssi
-    link href="img/favicon.ico" rel="shorcut icon"
-    link href="css/style.css" media="all" rel="stylesheet" type="text/css"
+    link href=img/favicon.ico rel="shorcut icon"
+    link href=css/style.css media=all rel=stylesheet type=text/css
   body
     header
       .header-content
         h1
-          a href="/" Yosssi
+          a href=/ Yosssi
     section
       .body-content
-        block content
+        = yield main
     footer
       .footer-content
         p
           | Created by&nbsp;
-          a href="https://twitter.com/_yosssi" Keiji Yoshida
+          a href=https://twitter.com/_yosssi Keiji Yoshida
         p
           | Powered by&nbsp;
-          a href="http://golang.org/" Go
+          a href=http://golang.org/ Go
           | &nbsp;{{.Version}}
     {{if .Production}}
-      script type="text/javascript"
+      = javascript
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)
         },i[r].l=1*new Date();a=s.createElement(o),

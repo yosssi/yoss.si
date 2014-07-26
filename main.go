@@ -7,7 +7,7 @@ import (
 
 	"github.com/go-martini/martini"
 	"github.com/martini-contrib/staticbin"
-	"github.com/yosssi/rendergold"
+	"github.com/yosssi/ace"
 )
 
 var (
@@ -16,16 +16,20 @@ var (
 
 func main() {
 	m := staticbin.Classic(Asset)
-	m.Use(rendergold.Renderer(rendergold.Options{Asset: Asset}))
-	m.Get("/", func(r rendergold.Render) {
-		r.HTML(
-			http.StatusOK,
-			"top/index",
-			map[string]interface{}{
-				"Version":    version,
-				"Production": martini.Env == martini.Prod,
-			},
-		)
+	m.Get("/", func(w http.ResponseWriter) {
+		tpl, err := ace.ParseFiles("views/base", "views/top/index", &ace.Options{Asset: Asset})
+		if err != nil {
+			panic(err)
+		}
+
+		data := map[string]interface{}{
+			"Version":    version,
+			"Production": martini.Env == martini.Prod,
+		}
+
+		if err := tpl.Execute(w, data); err != nil {
+			panic(err)
+		}
 	})
 	m.Run()
 }

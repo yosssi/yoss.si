@@ -17,7 +17,7 @@
     li
       a href=https://github.com/yosssi/ace Ace - HTML Template engine for Go
     li
-      a href=https://github.com/martini-contrib/staticbin StaticBin - Martini middleware/handler for serving static files from binary data
+      a href=https://github.com/yosssi/gcss GCSS - Pure Go CSS Preprocessor
   h2
     a href=http://blog.yoss.si Blog
   h2

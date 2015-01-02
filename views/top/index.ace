@@ -18,8 +18,12 @@
       a href=https://github.com/yosssi/ace Ace - HTML Template engine for Go
     li
       a href=https://github.com/yosssi/gcss GCSS - Pure Go CSS Preprocessor
-  h2
-    a href=https://blog.yoss.si Blog (Japanese)
+    li
+      a href=https://github.com/yosssi/gmq GMQ - Pure Go MQTT Client
+  h2 Blog
+  ul
+    li
+      a href=https://blog.yoss.si Yosssi's Blog
   h2
     a href=http://slides.yoss.si Slides
   ul

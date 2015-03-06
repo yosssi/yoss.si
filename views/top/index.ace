@@ -29,3 +29,5 @@
   ul
     li
       | <a href="http://slides.yoss.si/gocon/martini.html">Martini - Web framework for Go</a> / 31 May 2014 / Go Conference 2014 spring
+    li
+      | <a href="talks.yoss.si/2015/0220-good-package.slide">Tips for Creating a Good Package</a> / 20 February 2015 / GopherConIndia 2015
